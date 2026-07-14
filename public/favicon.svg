@@ -1,0 +1,25 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f038b0"/>
+      <stop offset="55%" stop-color="#a765f5"/>
+      <stop offset="100%" stop-color="#7c5cf0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- base -->
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="#1f1a2e"/>
+
+  <!-- gradient border -->
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="none" stroke="url(#grad)" stroke-width="2.5"/>
+
+  <!-- titlebar dots, echoing the hero panel -->
+  <circle cx="13" cy="14" r="2.6" fill="#ff5fa2"/>
+  <circle cx="22" cy="14" r="2.6" fill="#f7c948"/>
+  <circle cx="31" cy="14" r="2.6" fill="#3fe08f"/>
+
+  <!-- prompt glyph, drawn as paths so it never depends on a loaded font -->
+  <polyline points="16,28 27,37 16,46" fill="none" stroke="url(#grad)"
+            stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="32" y="42" width="17" height="6" rx="3" fill="url(#grad)"/>
+</svg>
