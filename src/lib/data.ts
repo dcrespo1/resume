@@ -1,43 +1,43 @@
 export interface Profile {
-  name: string
-  first: string
-  last: string
-  eyebrow: string
-  roles: string[]
-  summary: string
-  location: string
-  clearance: string
-  cert: string
+  name: string;
+  first: string;
+  last: string;
+  eyebrow: string;
+  roles: string[];
+  summary: string;
+  location: string;
+  clearance: string;
+  cert: string;
 }
 
 export interface Job {
-  title: string
-  org: string
-  place: string
-  when: string
-  bullets: string[]
+  title: string;
+  org: string;
+  place: string;
+  when: string;
+  bullets: string[];
 }
 
 export interface Skill {
-  name: string
-  level: number
+  name: string;
+  level: number;
 }
 
 export interface Language {
-  name: string
-  pct: number
+  name: string;
+  pct: number;
 }
 
 export interface Credential {
-  name: string
-  status: string
-  kind: 'active' | 'held'
+  name: string;
+  status: string;
+  kind: "active" | "held";
 }
 
 export interface Contact {
-  email: string
-  github: string
-  location: string
+  email: string;
+  github: string;
+  location: string;
 }
 
 export const profile: Profile = {
@@ -49,7 +49,7 @@ export const profile: Profile = {
   summary:
     "I build and run secure, compliant cloud enclaves — Infrastructure as Code, AKS clusters, and observability stacks in regulated environments. Fast learner, steady under pressure, happiest solving real problems by building the tooling to fix them.",
   location: "Lynchburg, VA",
-  clearance: "SECRET + TOP SECRET · ACTIVE",
+  clearance: "CLEARANCE · ACTIVE",
   cert: "Security+ CERTIFIED",
 };
 
@@ -107,8 +107,8 @@ export const languages: Language[] = [
 ];
 
 export const credentials: Credential[] = [
-  { name: "DoD Secret Clearance", status: "Active", kind: "active" },
-  { name: "DoD Top Secret Clearance", status: "Active", kind: "active" },
+  { name: "DoD Clearance", status: "Active", kind: "active" },
+  // { name: "DoD Top Secret Clearance", status: "Active", kind: "active" },
   { name: "CompTIA Security+", status: "Certified", kind: "held" },
 ];
 
