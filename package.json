@@ -13,7 +13,7 @@
     "@sveltejs/vite-plugin-svelte": "^7.1.2",
     "svelte": "^5.56.4",
     "svelte-check": "^4.7.2",
-    "typescript": "^5.9.3",
+    "typescript": "^7.0.2",
     "vite": "^8.1.1",
     "vite-plugin-singlefile": "^2.3.3"
   }
